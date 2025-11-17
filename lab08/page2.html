@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab: 04</title>
+
+    <style>
+     body {
+        font-family: "Lato", sans-serif;
+     }
+          
+     .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+     }
+          
+     .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+     }
+          
+     .sidenav a:hover {
+        color: blue;
+     }
+          
+     .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+     }
+    </style>
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="lab4.html">Homepage</a>
+        <a href="page1.html">Notes</a>
+        <a href="page3.html">Out of this World</a>
+    </div>
+
+    <!-- OPEN MENU BUTTON -->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+    <h1>Image 2</h1>
+
+
+    <br><br>
+
+    <img src="love.jpg" alt="clipart" width="600">
+    <br>
+    <a href="https://www.flickr.com/photos/perspective/42067174150/">Link Here</a>
+    <p>This image is an example of a Jpg image which stands for Joint Photographic Experts</p>
+    <ul>
+        <li>Store raster images, in either RGB or CMYK, with DCT lossy compression</li>
+        <li>Good for saving or sharing photographs</li>
+        <br>
+        <li>I choose this image as an example because I love street art especially graffiti. I was taught how to 
+            draw graffiti at a very young age. Some people look at it as deviance I say its art, a wa to express yourself. </li>
+    </ul>
+
+    <!-- JAVASCRIPT -->
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+</body>
+</html>
+
+   
