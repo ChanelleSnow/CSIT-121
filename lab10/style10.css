@@ -1,0 +1,128 @@
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+ 
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #cfc9cd;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: palevioletred;
+  }
+  
+ 
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .navbar {
+  overflow: hidden;
+  background-color: #f7d6d6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: purple;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold; 
+}
+  
+  #main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+  
+
+  body {
+    background-image: url("background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+  }
+  
+  
+  h1 {
+    text-align: center;
+    background-color: rgb(238, 108, 238);
+    color: black;
+  }
+  
+  
+  h2 {
+    background-color: #cfc9cd;
+  }
+
+  h3{
+    background-color: rgb(113, 187, 236);
+  }
+  h4{
+    background-color: rgb(252, 88, 178);
+  }
+  
+ 
+  .image-text {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .image-text img {
+    border-radius: 8px;
+  }
+
+.image-content {
+    display: flex;
+    gap: 20px;                
+    align-items: center;      
+    margin: 20px 0;
+}
+
+.image-content img {
+    width: 400px;             
+    height: auto;
+    border-radius: 10px;
+}
+
+.image-content .text {
+    max-width: 600px;
+    font-size: 18px;
+}
+  
