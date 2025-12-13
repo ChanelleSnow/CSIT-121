@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact Form</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+
+      .main {
+        padding: 16px;
+        margin-top: 60px;
+      }
+
+      form {
+        max-width: 400px;
+        margin: auto;
+      }
+
+      input, select, button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="tierlist.html">Tier-List</a>
+    </div>
+
+    <div class="main">
+      <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="age">Age:</label>
+          <input type="text" id="age" name="age" required>
+
+          <label for="genre">What kind of music do you like?</label>
+          <select id="genre" name="genre" required>
+              <option value="">Select</option>
+              <option value="Rock&Roll">Rock & Roll</option>
+              <option value="Hip Hop">Hip Hop</option>
+              <option value="Jazz">Jazz</option>
+              <option value="Reggae">Reggae</option>
+              <option value="Classical">Classical</option>
+              <option value="R&B">R&B</option>
+          </select>
+
+          <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+          e.preventDefault(); 
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const age = document.getElementById('age').value;
+          const genre = document.getElementById('genre').value;
+          alert(`Form submitted!\nName: ${name}\nEmail: ${email}\nAge: ${age}\nGenre: ${genre}`);
+      });
+    </script>
+</body>
+</html>
